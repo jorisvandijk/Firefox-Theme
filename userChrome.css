@@ -9,6 +9,7 @@
     margin-left: 23vw !important;
     max-height: 34px !important;
     padding-inline-start: 40px !important;
+    /*visibility: collapse !important;*/
 }
 
 .tabbrowser-arrowscrollbox {
@@ -85,7 +86,7 @@
   border-left: none !important;
   position: absolute;
 }
-
+/*
 :root[uidensity=compact] #PanelUI-button {
   margin-top: -28px;
 }
@@ -97,3 +98,23 @@
 :root[uidensity=touch] #PanelUI-button {
   margin-top: -36px;
 }
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+
+/*
+ * Hide tab bar, navigation bar and scrollbars
+ * !important may be added to force override, but not necessary
+ * #content is not necessary to hide scroll bars
+ *
+#TabsToolbar {visibility: collapse;}
+#navigator-toolbox {visibility: collapse;}
+#browser {margin-right: -14px; margin-bottom: 0px;} 
+#window-controls { display:none!important; }
+#TabsToolbar {visibility: collapse;}
+*/
+#window-controls { display:none!important; }
+.titlebar-buttonbox-container {display:none !important;}
+#navigator-toolbox { font-family:Andika !important }
