@@ -1,3 +1,3 @@
-[!](shot.png)
+![](shot.png)
 
 Logo property of Mozilla
