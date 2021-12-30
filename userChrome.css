@@ -1,120 +1,47 @@
-/* Tab bar */
-#navigator-toolbox {
-    border: 0px !important;
+/* hides the menu/URL bar */
+#main-window:not([customizing]) #navigator-toolbox:not(:focus-within):not(:hover) {
+  margin-top: -45px;
 }
 
+/* hides arrows */
+#back-button,
+#forward-button {
+    display: none!important;
+}
+
+ /* tabs bar */
 #TabsToolbar {
-    margin-top: -1px !important;
-    margin-bottom: 1px !important;
-    margin-left: 23vw !important;
-    max-height: 34px !important;
-    padding-inline-start: 40px !important;
-    /*visibility: collapse !important;*/
+  margin-top: -1px !important;
+  margin-bottom: 1px !important;
+  margin-left: 23vw !important;
+  max-height: 34px !important;
+  padding-inline-start: 40px !important;
+  /*visibility: collapse !important;*/
 }
 
-.tabbrowser-arrowscrollbox {
-    height: 34px !important;
-    min-height: 34px !important;
-}
-
-.titlebar-placeholder[type="pre-tabs"] {
-    display: none !important;
-}
-
-.tabbrowser-tab::before, .tabbrowser-tab::after {
-    border-left : none !important;
-}
-
-.tab-line {
-    display: none !important;
-}
-
-:root {
-    --toolbox-border-bottom-color: transparent !important;
-}
-
-/* Nav bar*/
+/* nav bar*/
 #nav-bar {
-    background: transparent !important;
-    margin-top: -34px !important;
-    margin-bottom: -1px !important;
-    margin-right: 75vw !important;
-    height: 34px !important;
+  background: transparent !important;
+  margin-top: -34px !important;
+  margin-bottom: -1px !important;
+  margin-right: 75vw !important;
+  height: 34px !important;
 }
 
 /* URL bar */
 #urlbar-container {
-    min-width: 100px !important;
+  min-width: 100px !important;
 }
 
 #urlbar {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-#page-action-buttons {
-    display: none !important;
-}
-
-#urlbar[breakout-extend] {
-    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-    left: calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2) !important;
-    width: 100% !important
-}
-
-#urlbar[breakout-extend] #urlbar-input-container {
-    height: calc(var(--tab-min-height) - 3px) !important;
-    padding: 0px !important
-}
-
-.urlbarView {
-    margin: 0px !important;
-    width: 100% !important
-}
-
-.urlbarView-row {
-    padding: 0px !important
-}
-
-/* Remove arrow buttons */
-#back-button, #forward-button { display:none!important; }
-
-/* Hamburger menu */
+/* hamburger menu */
 #PanelUI-button {
   -moz-box-ordinal-group: 0;
   border-left: none !important;
   position: absolute;
 }
-/*
-:root[uidensity=compact] #PanelUI-button {
-  margin-top: -28px;
-}
-
-#PanelUI-button {
-  margin-top: 0px;
-}
-
-:root[uidensity=touch] #PanelUI-button {
-  margin-top: -36px;
-}
-
-/*
- * Do not remove the @namespace line -- it's required for correct functioning
- */
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
-
-/*
- * Hide tab bar, navigation bar and scrollbars
- * !important may be added to force override, but not necessary
- * #content is not necessary to hide scroll bars
- *
-#TabsToolbar {visibility: collapse;}
-#navigator-toolbox {visibility: collapse;}
-#browser {margin-right: -14px; margin-bottom: 0px;} 
-#window-controls { display:none!important; }
-#TabsToolbar {visibility: collapse;}
-*/
-#window-controls { display:none!important; }
-.titlebar-buttonbox-container {display:none !important;}
-#navigator-toolbox { font-family:Andika !important }
