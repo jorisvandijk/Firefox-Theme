@@ -23,13 +23,13 @@
 /* Comment or uncomment depending of what elements you want to hide */
 
 /* Back button */
-#back-button { display: none !important } 
+/* #back-button { display: none !important } */
 
 /* Hide back button only when disabled */
 #back-button[disabled="true"] { display: none !important }
 
 /* Forward button */
-#forward-button { display: none !important } 
+/* #forward-button { display: none !important } */
 
 /* Hide forward button only when disabled */
 #forward-button[disabled="true"] { display: none !important }
